@@ -40,15 +40,36 @@
         echo $valor;
         echo ' ';
     }
+    echo '<br><br>';
+    //-----------------------------------------------------------------------------
+    //Leondo o arquivo afd-palavras
+    echo 'Palavras:<br>';
+    $arquivoPalavras = fopen('afd-palavras.txt','r');
+
+    //Lendo o arquivo
+    while(!feof($arquivoPalavras)){
+        $linha = fgets($arquivoPalavras,1024);
+        //echo $linha . '<br>';
+        $palavra = str_split($linha);
+        foreach ($palavra as $simbolo) {
+            echo $simbolo;
+        }
+    }
+    fclose($arquivoPalavras);
 
 
-    function automato ($afd, $palavra){
-        $estadoAtual = afd[initial];
+
+
+    function automato ($informacao, $arquivoPalavras){
+        $estadoAtual = $informacao[initial];
+        echo $estadoAtual;
+
+
 
         return $testeParaNaoDarErro;
     }
 
-
+    
 
 
 
