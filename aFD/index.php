@@ -32,7 +32,7 @@
     
 
     //Lendo o arquivo afd e colocando ele na variável arquivo
-    $arquivo = file_get_contents('afd.json');
+    $arquivo = file_get_contents('afn.json');
     // Não precisa editar o arquivo, ele ja le o json direto
     //Decodifica o formato json e retorna um objeto
     $informacao = json_decode($arquivo);
