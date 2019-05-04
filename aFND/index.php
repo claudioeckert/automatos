@@ -49,14 +49,14 @@
             echo ' ';
         }
         echo '<br>'; 
-    // As trasições são listas de listas, então precisamos de 2 foreach
+    // As trasições são listas de listas de listas, então precisamos de 3 foreach
     echo 'Transicoes: <br>';
     // Itera sobre cada estado de origem, as trasições que saem dele
     foreach($informacao->transitions as $estado_origem => $transicoes){
         // Itera sobre cada trasicao, sendo a chave o simbolo e o valor o estado de destino
         foreach($transicoes as $simbolo => $array_estados ){
             
-            foreach ($array_estados as $estado_destino => $valor2) {
+            foreach ($array_estados as $estado_destino) {
                 echo $estado_origem;
                 echo ':';
                 echo $simbolo;

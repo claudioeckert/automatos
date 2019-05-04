@@ -2,8 +2,9 @@
 "type":"afn",
 "alphabet":["a","b"],
 "states":["s0","s1","sf"],
+"initiAFD": "q0",
 "initials":["s0"],
-"transiTESTE":{"q0":{"a":"q1"}, "q1":{"a":"q3", "b":"q2"}, "q2": {"b":"q1"}},
+"transitiAFD":{"q0":{"a":"q1"}, "q1":{"a":"q3", "b":"q2"}, "q2": {"b":"q1"}},
 "transitions":{"s0":{"a":["s0","s1"],"b":["s0"]},"s1":{"a":["sf"]},"sf":{"a":["sf"],"b":["sf"]}},
 "final":["sf"]
 }
