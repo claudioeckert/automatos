@@ -1,6 +1,6 @@
 <?php
 
-    function automato ($info/*$informacao*/, $fita/*$palavra*/){
+    function automatos ($info/*$informacao*/, $fita/*$palavra*/){
         $estadosAtuais = $info->initials;
         //Aqui
         //$simbol = get_object_vars($)
@@ -26,9 +26,8 @@
             if (empty($novosEstadosAtuais)){
                 return 'no';
             }
-            var_dump($estadosAtuais);
+            //var_dump($estadosAtuais);
             $estadosAtuais = $novosEstadosAtuais;
-
         }
             //var_dump($info->final);
             
@@ -94,7 +93,7 @@
             //echo $linha . '<br>';
             $linha = trim($linha);
             $palavra = str_split($linha);
-            echo automato($informacao, $palavra).PHP_EOL;
+            echo automatos($informacao, $palavra).PHP_EOL;
             
             //foreach ($palavra as $simbolo) {
               //  echo $simbolo;
